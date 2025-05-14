@@ -29,7 +29,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/preline/dist/index.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -87,10 +89,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/preline/dist/index.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d3510b69-ecbb-4d5e-87f1-dfda6a45218c"
   }
 }
