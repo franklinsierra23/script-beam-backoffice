@@ -30,7 +30,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/preline/dist/index.js"
+              "node_modules/preline/dist/index.js",
+              "node_modules/preline/dist/preline.js"
+
             ]
           },
           "configurations": {
@@ -90,7 +92,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/preline/dist/index.js"
+               "node_modules/preline/dist/index.js",
+              "node_modules/preline/dist/preline.js"
             ]
           }
         }

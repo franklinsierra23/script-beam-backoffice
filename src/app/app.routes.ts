@@ -12,9 +12,9 @@ export const routes: Routes = [
     path: '',
     component: MainLayoutComponent, // Layout para el menú principal (para usuarios autenticados)
     children: [
-      { path: 'Home', component: HomePageComponent },
-      { path: 'Events', component: EventsListComponent },
-      { path: '', redirectTo: 'Home', pathMatch: 'full' }, // Si la ruta es '/', redirige a 'home' dentro del layout principal
+      { path: 'home', component: HomePageComponent },
+      { path: 'events', component: EventsListComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' }, // Si la ruta es '/', redirige a 'home' dentro del layout principal
     ],
     canActivate: [AuthGuard], // Aplica el guard a este conjunto de rutas
   },

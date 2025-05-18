@@ -1,11 +1,12 @@
 <a
-  [href]="url"
-  [class]="
-    'py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 font-medium focus:outline-hidden focus:opacity-80 transition-colors duration-300 ' +
-    (isActive
-      ? 'border-gray-800 text-gray-800 dark:border-neutral-200 dark:text-neutral-200'
-      : 'border-transparent text-gray-500 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200')
-  "
+  #anchor
+  [routerLink]="url"
+  routerLinkActive="border-gray-800 text-gray-800 dark:border-neutral-200 dark:text-neutral-200"
+  [routerLinkActiveOptions]="{ exact: true }"
+  [attr.aria-current]="link.isActive ? 'page' : null"
+  class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 font-medium focus:outline-none focus:opacity-80 transition-colors duration-300 border-transparent text-gray-500 hover:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200"
+  #link="routerLinkActive"
+  (click)="anchor.focus()"
 >
   {{ text }}
 </a>
